@@ -1,1 +1,1 @@
-../vol_describe.sh |grep volumeId -c
+./describe.sh |grep available -c
