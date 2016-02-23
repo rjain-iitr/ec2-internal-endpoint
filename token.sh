@@ -1,0 +1,1 @@
+curl -i -H "Content-Type: application/json" -d '{"auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "sbs_test_0014", "account": { "id": "632036443775" }, "password": "J3+rT4-yI4=r" } } } } }' https://iam.ind-west-1.staging.jiocloudservices.com:5000/v3/auth/tokens
