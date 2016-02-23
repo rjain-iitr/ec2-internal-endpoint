@@ -1,1 +1,1 @@
-./describe.sh |grep available -c
+./describe.sh |grep completed -c
