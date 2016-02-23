@@ -1,0 +1,8 @@
+available="$(./count_avaiable.sh)"
+echo "Avaiable $available"
+creating="$(./count_creating.sh)"
+echo "Creating $creating"
+delete="$(./count_deleting.sh)"
+echo "Deleting $delete"
+error="$(./count_error.sh)"
+echo "Error $error"
