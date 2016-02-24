@@ -2,7 +2,7 @@ volumes=$1
 a=1
 while [ $a -le $volumes ]
 do
-   ./create.sh rahul-vol-$1
+   ./create.sh rahul-vol-$a $2 $3
    echo $a
    a=`expr $a + 1`
 done
