@@ -1,1 +1,1 @@
-./describe.sh |grep delet -c
+./describe.sh |grep deleting -c

@@ -1,1 +1,1 @@
-./describe.sh |grep creating -c
+./describe.sh |grep "creating\|pending" -c
