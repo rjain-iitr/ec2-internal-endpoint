@@ -1,6 +1,7 @@
 required_status='available'
 loop=true
-volid=$1
+volid=`./create.sh sng 8 |sed -n -e 's/.*<volumeId>\(.*\)<\/volumeId>.*/\1/p'`
+echo $volid
 while $loop; do
 status=`./describe.sh $volid|sed -n -e 's/.*<status>\(.*\)<\/status>.*/\1/p'`
 #echo $status
