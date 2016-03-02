@@ -4,7 +4,6 @@ required_status='available'
 loop=true
 volid=`./create.sh rahul 10 |sed -n -e 's/.*<volumeId>\(.*\)<\/volumeId>.*/\1/p'`
 END1=$(date +%s%3N)
-echo $volid
 
 
 while $loop; do
@@ -17,4 +16,4 @@ fi
 
 done
 END2=$(date +%s%3N)
-echo "$((END1-START))    $((END2-END1))" >> /home/block_team/vol.tx
+echo "$((END1-START))    $((END2-END1))" >> $1

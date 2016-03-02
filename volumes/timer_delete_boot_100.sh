@@ -13,4 +13,4 @@ then
 fi
 done
 END2=$(date +%s%3N)
-echo "$((END1-START))    $((END2-END1))" >> /home/block_team/del10.txt
+echo "$((END1-START))    $((END2-END1))" >> /home/block_team/boot_u_del100.txt
