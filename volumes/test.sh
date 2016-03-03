@@ -15,9 +15,13 @@ time parallel -n0 -j 100 ./timer_create_nonboot.sh /home/block_team/non_boot_100
 ./collect_all_volumes.sh
 time parallel -j 100 -a a.txt ./timer_delete_100.sh
 
+time parallel -n0 -j 10 ./timer_create_nonboot_100.sh /home/block_team/non_boot_100.txt ::: {1..500}
+
+
+
 time parallel -n0 -j 10 ./timer_create_boot_centos6.6.sh /home/block_team/c_centos6_10.txt ::: {1..500}
 time parallel -n0 -j 20 ./timer_create_boot_centos6.6.sh /home/block_team/c_centos6_20.txt ::: {1..500}
-time parallel -n0 -j 50 ./timer_create_boot_centos6.6.sh /home/block_team/c_centos6_30.txt ::: {1..500}
+time parallel -n1 -j 50 ./timer_create_boot_centos6.6.sh /home/block_team/c_centos6_50.txt ::: {1..500}
 time parallel -n0 -j 100 ./timer_create_boot_centos6.6.sh /home/block_team/c_centos6_100.txt ::: {1..500}
 ./collect_all_volumes.sh
 time parallel -j 100 -a a.txt ./timer_delete_boot_centos_100.sh
