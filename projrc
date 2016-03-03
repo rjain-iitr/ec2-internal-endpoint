@@ -1,3 +1,5 @@
 export ProjectId=322076044420
 export UserId=e5fbab20f3ab405c9c66098e33a109ca
 export Token=423537c821904b67b8ae9a6da8baa503
+export JCS_ACCESS_KEY="66ff7f68c220466fb77dc8d53f0c7cb1"
+export JCS_SECRET_KEY="4188fd3ae8834048a399c759b33e543d"
